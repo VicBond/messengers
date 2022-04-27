@@ -53,7 +53,7 @@
     <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-firestore.js"></script>
     <script>
-      var config = {
+      const firebaseConfig = {
         apiKey: "AIzaSyBIxz_1RPi7GWPKqXXj6SrdKkDssdD6e9A",
         authDomain: "messenger-ea8e0.firebaseapp.com",
         databaseURL: "https://messenger-ea8e0-default-rtdb.firebaseio.com",
@@ -62,7 +62,7 @@
         messagingSenderId: "806053015255",
         appId: "1:806053015255:web:1de57e7652914783ceca92",
       };
-      firebase.initializeApp(config);
+      firebase.initializeApp(firebaseConfig);
       const db = firebase.firestore();
     </script>
     <script src="scripts/app.js"></script>
