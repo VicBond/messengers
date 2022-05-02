@@ -7,5 +7,6 @@ const chatroom = new Chatroom('gaming', 'shaun');
 //   .then(() => console.log('chat added'))
 //   .catch(err => console.log(err));
 chatroom.getChats((data) => {
-  console.log(data);
+  // console.log(data);
+  chatUI.render(data);
 });
