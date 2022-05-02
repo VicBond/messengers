@@ -1,3 +1,5 @@
+const chatList = document.querySelector('.chat-list');
+
 const chatroom = new Chatroom('gaming', 'shaun');
 // console.log(chatroom);
 // chatroom.addChat('hello everyone')
