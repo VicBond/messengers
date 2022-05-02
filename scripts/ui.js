@@ -4,7 +4,8 @@ class ChatUI {
   }
   render(data) {
     const when = dateFns.distanceInWordsToNow(
-      data.created_at.toDate()
+      data.created_at.toDate(),
+      { addSuffix: true }
     );
   
     const html = `
