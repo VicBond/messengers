@@ -14,7 +14,9 @@ newNameForm.addEventListener('submit', () => {
   e.preventDefault();
   const newName = newNameForm.name.value.trim();
   chatroom.updateName(newName);
-  
+
+  newNameForm.reset();
+
 });
 
 const chatUI = new ChatUI(chatList);
