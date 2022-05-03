@@ -22,8 +22,10 @@ newNameForm.addEventListener('submit', e => {
   setTimeout(() => updateMssg.innerText = '', 3000);
 });
 
+const username = localStorage.username ? localStorage.username : 'user';
+
 const chatUI = new ChatUI(chatList);
-const chatroom = new Chatroom('gaming', 'shaun');
+const chatroom = new Chatroom('gaming', username);
 // console.log(chatroom);
 // chatroom.addChat('hello everyone')
 //   .then(() => console.log('chat added'))
