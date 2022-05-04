@@ -2,6 +2,7 @@ const chatList = document.querySelector('.chat-list');
 const newChatForm = document.querySelector('.new-chat');
 const newNameForm = document.querySelector('.new-name');
 const updateMssg = document.querySelector('.update-mssg');
+const rooms = document.querySelector('.chat-rooms');
 
 newChatForm.addEventListener('submit', e => {
   e.preventDefault();
@@ -21,6 +22,12 @@ newNameForm.addEventListener('submit', e => {
   updateMssg.innerText = `Your name was updated to ${newName}`;
   setTimeout(() => updateMssg.innerText = '', 3000);
 });
+
+rooms.addEventListener('click', (event) => {
+  if(event.target.tagName === 'BUTTON') {
+    chatUI.clear();
+  }
+})
 
 const username = localStorage.username ? localStorage.username : 'user';
 
